@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="314.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.carhire.controller.CarregFormController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="13.0" prefHeight="292.0" prefWidth="272.0" style="-fx-background-color: #dfe6e9;">
+         <children>
+            <Label layoutX="22.0" layoutY="53.0" text="Car Reg No">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="84.0" prefHeight="18.0" prefWidth="64.0" text="Make">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="113.0" prefHeight="18.0" prefWidth="64.0" text="Model">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="144.0" prefHeight="18.0" prefWidth="64.0" text="Available">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCarRegNo" layoutX="100.0" layoutY="49.0" promptText="CarRegNo" />
+            <TextField fx:id="txtMake" layoutX="100.0" layoutY="80.0" promptText="Make" />
+            <TextField fx:id="txtModel" layoutX="100.0" layoutY="109.0" promptText="Model" />
+            <Button layoutX="86.0" layoutY="210.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="58.0" style="-fx-background-color: #81ecec;" text="Add">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="191.0" layoutY="210.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="58.0" style="-fx-background-color: #81ecec;" text="Edit">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="86.0" layoutY="252.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="58.0" style="-fx-background-color: #81ecec;" text="Delete">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="191.0" layoutY="252.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="58.0" style="-fx-background-color: #81ecec;" text="Cancel">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ComboBox fx:id="cmbAvailable" layoutX="99.0" layoutY="141.0" prefWidth="150.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="293.0" layoutY="14.0" prefHeight="292.0" prefWidth="314.0">
+         <children>
+            <TableView fx:id="tblCars" layoutX="6.0" layoutY="12.0" prefHeight="267.0" prefWidth="302.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Car Reg No" />
+                <TableColumn prefWidth="75.0" text="Make" />
+                  <TableColumn prefWidth="75.0" text="Model" />
+                  <TableColumn prefWidth="75.0" text="Available" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
